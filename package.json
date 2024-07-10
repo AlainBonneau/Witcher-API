@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js",
+    "db:create": "node app/migrations/create-tables.js",
+    "db:seed": "node app/migrations/seed-tables.js",
+    "db:reset": "pnpm db:create && pnpm db:seed"
   },
   "keywords": [],
   "author": "",
