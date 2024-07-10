@@ -6,7 +6,6 @@ import {
   Resistance,
   Weakness,
 } from "../models/associations.js";
-$;
 
 console.log("🚧 Création des données en cours...");
 

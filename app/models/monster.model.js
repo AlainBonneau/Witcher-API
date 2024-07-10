@@ -18,15 +18,15 @@ Monster.init(
     //   allowNull: false,
     // },
     location: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     weakness: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING(255),
       allowNull: true,
     },
     resistance: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING(255),
       allowNull: true,
     },
   },
