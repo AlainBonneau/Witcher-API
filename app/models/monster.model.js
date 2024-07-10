@@ -13,10 +13,10 @@ Monster.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    breed: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-    },
+    // breed: {
+    //   type: DataTypes.STRING(50),
+    //   allowNull: false,
+    // },
     location: {
       type: DataTypes.STRING(50),
       allowNull: false,
