@@ -6,3 +6,5 @@ const monsterController = {
     res.json(monsterList);
   },
 };
+
+export default monsterController;
