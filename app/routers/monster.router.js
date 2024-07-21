@@ -5,4 +5,5 @@ export const router = Router();
 
 router.get("/monstre", monsterController.getAllMonster);
 router.get("/monstre/:id", monsterController.getMonsterById);
-router.post("/monstre/:id", monsterController.updateMonster);
+router.patch("/monstre/:id", monsterController.updateMonster);
+router.post("/monstre", monsterController.createMonster);
