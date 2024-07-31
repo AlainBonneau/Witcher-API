@@ -55,6 +55,20 @@ const monsterController = {
     });
     res.json(updateMonster);
   },
+
+  // Permet de supprimer un monstre via son id.
+  deleteMonster: async (req, res) => {
+    const monsterId = parseInt(req.params.id);
+    if (!monsterId) {
+      return res.status(404).json({ error: "Id inconnu" });
+    }
+    const monster = await Monster.findByPk(monsterId);
+    if (!monster) {
+      return res.status(404).json({ error: "Monstre inconnu" });
+    }
+    await monster.destroy();
+    res.json({ message: "Monstre supprimé" });
+  }
 };
 
 export default monsterController;
