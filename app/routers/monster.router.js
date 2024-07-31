@@ -7,3 +7,4 @@ router.get("/monstre", monsterController.getAllMonster);
 router.get("/monstre/:id", monsterController.getMonsterById);
 router.patch("/monstre/:id", monsterController.updateMonster);
 router.post("/monstre", monsterController.createMonster);
+router.delete("/monstre/:id", monsterController.deleteMonster);
