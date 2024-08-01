@@ -9,6 +9,10 @@ Monster.init(
       type: DataTypes.STRING(50),
       allowNull: false,
     },
+    avatar: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
+    },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
