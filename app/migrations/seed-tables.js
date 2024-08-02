@@ -56,4 +56,7 @@ await Resistance.create({
   description: "Résistance aux poisons",
 });
 
-await Resistance.create({});
+await Resistance.create({
+  name: "Acier",
+  description: "Résistance aux armes en acier",
+});
