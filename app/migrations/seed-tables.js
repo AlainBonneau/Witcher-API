@@ -68,4 +68,8 @@ await Weakness.create({
   description: "Vulnérable à l'argent",
 });
 
-
+await Weakness.create({
+  name: "Huile contre les ornithosaures",
+  description:
+    "Appliquez cette huile sur votre épée pour infliger des dégâts accrus aux ornithosaures",
+});
