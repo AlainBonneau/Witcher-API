@@ -19,3 +19,5 @@ const weaknessController = {
     res.json(weakness);
   },
 };
+
+export default weaknessController;
