@@ -9,6 +9,8 @@ import {
 
 console.log("🚧 Création des données en cours...");
 
+// Création des monstres en base de données !
+
 await Monster.create({
   name: "Loup-Garou",
   avatar: "",
@@ -31,14 +33,30 @@ await Monster.create({
   resistance: "Insensibles à la plupart des poisons et difficiles à étourdir",
 });
 
+// Création des races en base de données !
+
 await Breed.create({
   name: "Créatures maudites",
-  description: "Les créatures maudites sont des êtres humains qui ont été transformés en monstres par une malédiction.",
+  description:
+    "Les créatures maudites sont des êtres humains qui ont été transformés en monstres par une malédiction.",
   avatar: "",
 });
 
 await Breed.create({
   name: "Draconides",
-  description: "Les draconides sont des monstres reptiliens qui ont des capacités magiques.",
+  description:
+    "Les draconides sont des monstres reptiliens qui ont des capacités magiques.",
   avatar: "",
+});
+
+// Création des résistances en base de données !
+
+await Resistance.create({
+  name: "Poison",
+  description: "Résistance aux poisons",
+});
+
+await Resistance.create({
+  name: "Acier",
+  description: "Résistance aux armes en acier",
 });
