@@ -60,3 +60,16 @@ await Resistance.create({
   name: "Acier",
   description: "Résistance aux armes en acier",
 });
+
+// Création des faiblesses en base de données !
+
+await Weakness.create({
+  name: "Argent",
+  description: "Vulnérable à l'argent",
+});
+
+await Weakness.create({
+  name: "Huile contre les ornithosaures",
+  description:
+    "Appliquez cette huile sur votre épée pour infliger des dégâts accrus aux ornithosaures",
+});
