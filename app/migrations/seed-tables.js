@@ -73,3 +73,17 @@ await Weakness.create({
   description:
     "Appliquez cette huile sur votre épée pour infliger des dégâts accrus aux ornithosaures",
 });
+
+// Création des locations en base de données !
+
+await Location.create({
+  name: "Kaer Morhen",
+  description:
+    "Kaer Morhen est une ancienne forteresse partiellement ruinée, bâtie dans les montagnes au nord-est du royaume de Kaedwen",
+});
+
+await Location.create({
+  name: "Caverne",
+  description:
+    "Les cavernes dans sont des grottes naturelles sombres et humides. Elles ont des parois rocheuses rugueuses, souvent couvertes de mousses et de champignons lumineux. L’air est frais et chargé d’une odeur de terre humide. On peut y trouver des stalactites et des stalagmites, ainsi que des formations minérales étranges. Elles abritent parfois des créatures dangereuses comme des goules ou des araignées. L'éclairage est faible, généralement éclairé par des sources naturelles ou magiques, ce qui crée une atmosphère mystérieuse et inquiétante.",
+});
