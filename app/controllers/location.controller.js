@@ -19,3 +19,5 @@ const locationController = {
     res.json(location);
   },
 };
+
+export default locationController;
